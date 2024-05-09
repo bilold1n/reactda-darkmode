@@ -2,13 +2,12 @@ import React, { useContext } from "react";
 import Header from "../../components/header";
 import { Outlet } from "react-router-dom";
 import { DarkMode } from "../../context/context";
-function Home() {
+function Layout() {
   const {
     state: { lanuage },
   } = useContext(DarkMode);
   return (
     <>
-      <Header />
       <div className="container">
         <div className="divl">
           <h5 className="title">
@@ -30,4 +29,4 @@ function Home() {
     </>
   );
 }
-export default Home;
+export default Layout;
