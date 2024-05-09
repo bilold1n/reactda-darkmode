@@ -1,11 +1,10 @@
-import React from "react";
+import React, { useContext } from "react";
 import Header from "../../components/header";
+import { DarkMode } from "../../context/context";
 function About() {
-  return (
-    <>
-      <Header />
-      <h1 className="title">Hammasi joyida</h1>
-    </>
-  );
+  const {
+    state: { lanuage },
+  } = useContext(DarkMode);
+  return <></>;
 }
 export default About;

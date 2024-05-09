@@ -47,9 +47,18 @@ a {
 }
 .title {
   text-align: center;
-  font-size: 35px;
+  font-size: 20px;
   margin-top: 300px;
   color: var(--main-bg5);
+  max-width: 650px;
+  box-shadow: 1px 1px 10px 1px rgba(34, 60, 80, 0.2);
+  padding: 50px;
+  margin-top: 170px;
+}
+.divl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .active {
   color: red;
@@ -58,4 +67,7 @@ a {
   width: 120px;
   padding: 10px 2px;
   border-radius: 8px;
+}
+select {
+  cursor: pointer;
 }
